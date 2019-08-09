@@ -7,7 +7,7 @@ let closeWord = function (data, data2, callback) {
     return 0
   }
 
-  
+
   // let data3 = data.split('')
   let z = 0
   let max = 9999
@@ -24,7 +24,7 @@ let closeWord = function (data, data2, callback) {
   first = first.split('')
   second = data2.split('')
 
-  for(let a = 0; a < word.length; a++){
+  for (let a = 0; a < word.length; a++) {
     array = word[a].split('')
 
     for (let b = 0; b < array.length; b++) {
@@ -33,7 +33,7 @@ let closeWord = function (data, data2, callback) {
         cekHasil = cekHasil + 1
       }
     }
-    if(a == word.length -1 && cekHasil == 0){
+    if (a == word.length - 1 && cekHasil == 0) {
       callback("Tak Dapat Ditransformasi")
       return 0
     }
@@ -70,7 +70,7 @@ let closeWord = function (data, data2, callback) {
           newSame = newSame + (first[j].charCodeAt(0) - second[j].charCodeAt(0))
         }
       }
-      if(newSame <= 5 ){
+      if (newSame <= 5) {
         countWord.push(data2)
         callback(countWord)
         return 0

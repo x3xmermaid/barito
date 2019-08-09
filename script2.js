@@ -11,7 +11,6 @@ let anagram = function (data, callback) {
         A.sort()
         B.sort()
         if (A.join('') == B.join('')) {
-          // console.log(data[i])
           dataText = [...dataText, data[j]]
           dataNew[i] = dataText
         }
