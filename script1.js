@@ -34,7 +34,7 @@ let closeWord = function (data, data2, callback) {
       }
     }
     if (a == word.length - 1 && cekHasil == 0) {
-      callback("Tak Dapat Ditransformasi")
+      callback(["Tak Dapat Ditransformasi"])
       return 0
     }
   }
